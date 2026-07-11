@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Recipe App</h1>
+
+    <div style="display: flex; justify-content: center;align-items: center;gap: 20px;" class="menu">
+        <button onclick="getMeal('Beef')"> Beef</button>
+        <button onclick="getMeal('Chicken')"> Chicken</button>
+        <button onclick="getMeal('Seafood')"> Seafood</button>
+        <button onclick="getMeal('Dessert')"> Dessert</button>
+        <button onclick="getMeal('Vegetarian')"> Vegetarian</button>
+    </div>
+
+    <div id="cards"></div>
+
+    <div id="modal" class="modal">
+
+        <div style="display: flex; justify-content: center;" class="modal-content">
+
+
+            <img id="mealImg" src="">
+
+            <h2 id="mealName"></h2>
+
+            <p id="mealCategory"></p>
+
+            <p id="mealArea"></p>
+
+            <h3>Tayyorlanishi</h3>
+
+            <p id="mealText"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
