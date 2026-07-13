@@ -69,3 +69,31 @@ window.onclick = function (e) {
     modal.style.display = "none";
   }
 }
+
+
+let cards = document.querySelector("#cards");
+
+function getMeal(category) {
+  fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
+    .then(res => res.json())
+    .then(data => {
+
+      cards.innerHTML = "";
+
+      data.meals.forEach(meal => {
+
+        cards.innerHTML += `
+          <div class="card">
+            <img src="${meal.strMealThumb}">
+            <h3>${meal.strMeal}</h3>
+
+            <button onclick="showRecipe('${meal.idMeal}')">
+              Recipe
+            </button>
+          </div>
+        `;
+
+      });
+
+    });
+}
