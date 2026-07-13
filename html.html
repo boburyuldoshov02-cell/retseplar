@@ -12,21 +12,21 @@
     <h1 style="text-align: center;"> Recipe App</h1>
 
     <div style="display: flex; justify-content: center;align-items: center;gap: 20px;" class="menu">
-        <button onclick="getMeal('Beef')"> Beef</button>
-        <button onclick="getMeal('Chicken')"> Chicken</button>
-        <button onclick="getMeal('Seafood')"> Seafood</button>
-        <button onclick="getMeal('Dessert')"> Dessert</button>
-        <button onclick="getMeal('Vegetarian')"> Vegetarian</button>
+        <button class="but" onclick="getMeal('Beef')"> Beef</button>
+        <button class="but" onclick="getMeal('Chicken')"> Chicken</button>
+        <button class="but" onclick="getMeal('Seafood')"> Seafood</button>
+        <button class="but" onclick="getMeal('Dessert')"> Dessert</button>
+        <button class="but" onclick="getMeal('Vegetarian')"> Vegetarian</button>
     </div>
 
     <div id="cards"></div>
 
     <div id="modal" class="modal">
 
-        <div style="display: flex; justify-content: center;" class="modal-content">
+        <div style="display: flex; justify-content: center; gap: 20px; " class="modal-content">
 
 
-            <img id="mealImg" src="">
+            <img width="250px" id="mealImg" src="">
 
             <h2 id="mealName"></h2>
 
